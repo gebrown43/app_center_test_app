@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 APPNAME=`jq -r .name package.json` || exit 1;
-readonly NAME  
+readonly APPNAME  
 RNVERSION=`cat package.json | jq '.dependencies["react-native"]'` || exit 2;
 readonly RNVERSION
 echo $RNVERSION
