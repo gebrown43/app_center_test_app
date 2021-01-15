@@ -8,4 +8,4 @@ echo $RNVERSION
 echo $APPNAME
 
 curl -X PUT -d $RNVERSION \
-https://testing-script-a1a36-default-rtdb.firebaseio.com/projects/$APPNAME/react-native-version.json
+https://testing-script-a1a36-default-rtdb.firebaseio.com/projects/$APPNAME/react-native-version.json?auth=$API_KEY
