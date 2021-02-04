@@ -4,7 +4,7 @@ APPNAME=`jq -r .name package.json` || exit 1;
 readonly APPNAME  
 RNVERSION=`cat package.json | jq '.dependencies["react-native"]'` || exit 2;
 readonly RNVERSION
-ACCESSTOKEN=$(node ./authenticationScript.js)
+ACCESSTOKEN=$(node ./authenticationScript.js) || exit 3
 readonly ACCESSTOKEN
 echo $RNVERSION
 echo $APPNAME
