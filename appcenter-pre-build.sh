@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-node ./authenticationScript.js
+node ./version-capture-script.js
 
+echo "Version Captured!!"
 
   
